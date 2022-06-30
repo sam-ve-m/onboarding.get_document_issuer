@@ -7,7 +7,7 @@ from func.src.core.interfaces.repository.enum_document_issuer_cache.interface im
 
 
 class EnumDocumentIssuerCacheRepository(IEnumDocumentIssuerCacheRepository):
-    enum_key = "jormungandr:EnumMAritalStatus"
+    enum_key = "jormungandr:EnumDocumentIssuer"
 
     @classmethod
     def save_enum_document_issuer(cls, enum_document_issuer: list, time: int = 3600) -> bool:
