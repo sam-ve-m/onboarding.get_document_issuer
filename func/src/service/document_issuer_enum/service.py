@@ -1,9 +1,9 @@
 from etria_logger import Gladsheim
 
-from func.src.core.interfaces.service.document_issuer_enum.interface import IDocumentIssuerEnumService
-from func.src.domain.response.model import ResponseModel
-from func.src.domain.response.status_code.enums import StatusCode
-from func.src.repository.document_issuer_enum.repository import DocumentIssuerEnumRepository
+from src.core.interfaces.service.document_issuer_enum.interface import IDocumentIssuerEnumService
+from src.domain.response.model import ResponseModel
+from src.domain.response.status_code.enums import StatusCode
+from src.repository.document_issuer_enum.repository import DocumentIssuerEnumRepository
 
 
 class DocumentIssuerEnumService(IDocumentIssuerEnumService):
