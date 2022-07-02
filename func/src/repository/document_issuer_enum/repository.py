@@ -1,7 +1,11 @@
 from typing import List, Tuple
 
-from src.core.interfaces.repository.document_issuer_enum.interface import IDocumentIssuerEnumRepository
-from src.repository.enum_document_issuer_cache.repository import EnumDocumentIssuerCacheRepository
+from src.core.interfaces.repository.document_issuer_enum.interface import (
+    IDocumentIssuerEnumRepository,
+)
+from src.repository.enum_document_issuer_cache.repository import (
+    EnumDocumentIssuerCacheRepository,
+)
 from src.repository.base_repository.oracle.repository import OracleBaseRepository
 
 

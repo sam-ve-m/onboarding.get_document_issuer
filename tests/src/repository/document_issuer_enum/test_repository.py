@@ -1,5 +1,7 @@
 from src.repository.document_issuer_enum.repository import DocumentIssuerEnumRepository
-from src.repository.enum_document_issuer_cache.repository import EnumDocumentIssuerCacheRepository
+from src.repository.enum_document_issuer_cache.repository import (
+    EnumDocumentIssuerCacheRepository,
+)
 from src.repository.base_repository.oracle.repository import OracleBaseRepository
 from tests.test_doubles.doubles import (
     enum_repository_get_cached_enum_dummy,

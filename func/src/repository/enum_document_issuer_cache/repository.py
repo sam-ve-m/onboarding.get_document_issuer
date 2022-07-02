@@ -3,14 +3,18 @@ from typing import Union
 from etria_logger import Gladsheim
 from mnemosine import SyncCache
 
-from src.core.interfaces.repository.enum_document_issuer_cache.interface import IEnumDocumentIssuerCacheRepository
+from src.core.interfaces.repository.enum_document_issuer_cache.interface import (
+    IEnumDocumentIssuerCacheRepository,
+)
 
 
 class EnumDocumentIssuerCacheRepository(IEnumDocumentIssuerCacheRepository):
     enum_key = "jormungandr:EnumDocumentIssuer"
 
     @classmethod
-    def save_enum_document_issuer(cls, enum_document_issuer: list, time: int = 3600) -> bool:
+    def save_enum_document_issuer(
+        cls, enum_document_issuer: list, time: int = 3600
+    ) -> bool:
         try:
             SyncCache.save(cls.enum_key, list(enum_document_issuer), int(time))
             return True

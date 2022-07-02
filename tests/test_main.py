@@ -3,8 +3,13 @@ from unittest.mock import patch
 from main import get_enums
 from src.repository.document_issuer_enum.repository import DocumentIssuerEnumRepository
 from src.service.document_issuer_enum.service import DocumentIssuerEnumService
-from tests.test_doubles.doubles import main_service_response_dummy, main_response_dummy, \
-    enum_service_get_enums_response_none, enum_service_response_none, enum_service_response_invalid
+from tests.test_doubles.doubles import (
+    main_service_response_dummy,
+    main_response_dummy,
+    enum_service_get_enums_response_none,
+    enum_service_response_none,
+    enum_service_response_invalid,
+)
 
 service_response_dummy = main_service_response_dummy
 
