@@ -51,5 +51,5 @@ spec:
     packageref:
       name: fn-get-document-issuer-66f9aafc-81e8-436b-a380-42e8615c2ebd
       namespace: default
-  requestsPerPod: 1
+  requestsPerPod: 10000
   resources: {}
